@@ -33,7 +33,7 @@ Possible Improvements
 -----------------------
 * Add a Real Time Clock (RTC) and have it reset at a specified time (I didn't have an RTC available when I built this).
 * Add "Smart" capabilities to send an email or SMS when post is delivered (I didn't have to do this as the carrier already sends an email when post is delivered).
-* Rechargeable battery system, possibly using a solar panel (I had to run power to my postbox!). I measured the power usage from my system and it was 1.4 Watts (Yours may be less as this included the DC -> AC transformer). This system uses 12.264kWh per year which would cost roughly between €1.50 and €2 to run for the year (depending on your unit price).
+* Rechargeable battery system, possibly using a solar panel (I had to run power to my postbox!). I measured the power usage from my system and it was 1.4 Watts (Yours may be less as this included the AC -> DC transformer). This system uses 12.264kWh per year which would cost roughly between €1.50 and €2 to run for the year (depending on your unit price).
 * I couldn't find bright green LEDs that's why the colours are red and blue as I had bright LEDs in those colours.
 
 Circuitry Photos
