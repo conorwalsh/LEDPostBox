@@ -9,7 +9,7 @@ Setup
 ---------
 1. Build the circuit using the schematics provided below.
 2. Download the Arduino code from the "arduino_code" folder.
-3. If you want you can edit <a href="https://github.com/conorwalsh/LEDPostBox/blob/master/arduino_code/arduinopostbox.ino#L39">Line 39</a> and specify you prefered reset time.
+3. If you want you can edit <a href="https://github.com/conorwalsh/LEDPostBox/blob/master/arduino_code/arduinopostbox.ino#L39">Line 39</a> and specify you preferred reset time.
 4. Upload Arduino code to the Arduino.
 5. Fit the device to your postbox.
 
@@ -26,14 +26,14 @@ Operation
 -----------------------
 The system uses a normally closed limit switch, so that when the box is closed the switch is pushed in and the circuit is broken but when the box opens the switch is no longer pushed in and the switch closes.<br/>
 When the Arduino detects that the switch has been closed for more than 500 milliseconds it turns on a green (or blue) LED to alert the user.<br/>
-After a specified length of time the Arduino resets the system with a red LED on and the other LED off, to indicte that there is no post. Hopefully the residents will have removed the post before then.<br/>
+After a specified length of time the Arduino resets the system with a red LED on and the other LED off, to indicate that there is no post. Hopefully the residents will have removed the post before then.<br/>
 You could change the code so that it toggles the LEDs when the box is opened but if the post is not collected the same day it will interfere with the system.<br/>
 
 Possible Improvements
 -----------------------
-* Add a Real Time Clock (RTC) and have it reset at a specified time (I didn't have an RTC availible when I built this).
+* Add a Real Time Clock (RTC) and have it reset at a specified time (I didn't have an RTC available when I built this).
 * Add "Smart" capabilities to send an email or SMS when post is delivered (I didn't have to do this as the carrier already sends an email when post is delivered).
-* Rechargable battery system, possibly using a solar panel (I had to run power to my postbox!). I measured the power usage from my system and it was 1.4 Watts (Yours may be less as this included the DC -> AC transformer). This system uses 12.264kWh per year which would cost roughly between €1.50 and €2 to run for the year (depending on your unit price).
+* Rechargeable battery system, possibly using a solar panel (I had to run power to my postbox!). I measured the power usage from my system and it was 1.4 Watts (Yours may be less as this included the DC -> AC transformer). This system uses 12.264kWh per year which would cost roughly between €1.50 and €2 to run for the year (depending on your unit price).
 * I couldn't find bright green LEDs that's why the colours are red and blue as I had bright LEDs in those colours.
 
 Circuitry Photos
@@ -57,8 +57,8 @@ LEDs fitted in the side of the postbox:<br/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170527_162059568-s.jpg" width="400"/>
 
 Switch fitted in postbox:<br/>
-<img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170527_162222991-s.jpg" width="400"/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170527_162239818.jpg" height="400"/>
+<img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170527_162222991-s.jpg" width="400"/>
 
 Project box and wires taped to the inside of the postbox:<br/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170527_162246335-s.jpg" width="400"/>
