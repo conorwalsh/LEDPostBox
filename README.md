@@ -20,7 +20,8 @@ Breadboard View:<br/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/schematics/postbox_bb.png" width="350"/>
 
 Schematic View:<br/>
-<img src="https://github.com/conorwalsh/LEDPostBox/blob/master/schematics/postbox_schem.png" width="350"/>
+<img src="https://github.com/conorwalsh/LEDPostBox/blob/master/schematics/postbox_schem.png" width="350"/></br>
+NOTE: The diode on the power connector is used to prevent reverse voltage. If a barrel connector is used the diode may not be required but I designed my connectors with header pins because it is an easy way to quickly make connectors but it is easy to accidently plug the power in incorrectly. This diode is included to protect the Arduino however it can be ommitted if you desire.
 
 Operation
 -----------------------
