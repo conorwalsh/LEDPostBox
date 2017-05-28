@@ -3,13 +3,13 @@
 Description
 -----------
 
-This project uses an Arduino Nano to add LEDs to a post box to alert the user to when there is post in the box. An Post (Ireland's National Mail Carrier) recently introduced the new "DeliveryBox" which is a post box that can take parcels as well as letters. The post worker puts all your post in this box and scans the box which sends you an email. However I wanted a quick visual indicator to alert me when I passed the postbox that there was post that day. This project uses a limit switch to determine when the box is opened (post delivered) and then lights LEDs according. The LEDs are reset after a specified period. This project was specificy designed for an Irish "DeliveryBox" but the project could be adapted for most international mail boxes.
+This project uses an Arduino Nano to add LEDs to a post box to alert the user to when there is post in the box. An Post (Ireland's National Mail Carrier) recently introduced the new "DeliveryBox" which is a post box that can take parcels as well as letters. The post worker puts all your post in the box and scans the box which sends you an email. However I wanted a quick visual indicator to alert me when I passed the postbox that there was post that day. This project uses a limit switch to determine when the box is opened (post delivered) and then lights LEDs according. The LEDs are reset after a specified period of time. This project was specifically designed for an Irish "DeliveryBox" but the project could be adapted for most international mail boxes.
 
-Setup
+Project Steps
 ---------
 1. Build the circuit using the schematics provided below.
 2. Download the Arduino code from the "arduino_code" folder.
-3. If you want you can edit <a href="https://github.com/conorwalsh/LEDPostBox/blob/master/arduino_code/arduinopostbox.ino#L39">Line 39</a> and specify you preferred reset time.
+3. If you want you can edit <a href="https://github.com/conorwalsh/LEDPostBox/blob/master/arduino_code/arduinopostbox.ino#L39">Line 39</a> and specify your preferred reset time in the Arduino code.
 4. Upload Arduino code to the Arduino.
 5. Fit the device to your postbox.
 
@@ -31,14 +31,14 @@ You could change the code so that it toggles the LEDs when the box is opened but
 
 Possible Improvements
 -----------------------
-* Add a Real Time Clock (RTC) and have it reset at a specified time (I didn't have an RTC available when I built this).
+* Add a Real Time Clock (RTC) and have it reset at a specified time e.g. 2 am (I didn't have an RTC available when I built this).
 * Add "Smart" capabilities to send an email or SMS when post is delivered (I didn't have to do this as the carrier already sends an email when post is delivered).
 * Rechargeable battery system, possibly using a solar panel (I had to run power to my postbox!). I measured the power usage from my system and it was 1.4 Watts (Yours may be less as this included the AC -> DC transformer). This system uses 12.264kWh per year which would cost roughly between €1.50 and €2 to run for the year (depending on your unit price).
 * I couldn't find bright green LEDs that's why the colours are red and blue as I had bright LEDs in those colours.
 
 Circuitry Photos
 -----------------------
-Arduino Nano with soldered connectors:<br/>
+Arduino Nano (Chinese Clone) with soldered connectors:<br/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170518_085043155_BURST000_COVER_TOP.jpg" width="400"/>
 <img src="https://github.com/conorwalsh/LEDPostBox/blob/master/images/IMG_20170518_085048447.jpg" width="400"/>
 
