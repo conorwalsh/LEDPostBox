@@ -69,7 +69,7 @@ Postbox in operation:<br/>
 
 License (MIT)
 ------
-Copyright (c) 2016 Conor Walsh 
+Copyright (c) 2017 Conor Walsh 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
